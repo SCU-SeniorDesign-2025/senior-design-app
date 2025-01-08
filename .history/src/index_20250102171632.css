@@ -1,0 +1,89 @@
+/**************** Custom Presets ****************/
+html{
+  /* colors */
+  --bg-100: rgba(18, 18, 18, 1);
+  --bg-89: rgba(36, 36, 36, 0.89);
+  --bg-88: rgba(25, 25, 25, 0.88);
+  --bg-80: rgba(18, 18, 18, 0.8);
+  --primary: rgba(124, 2, 2, 1);
+  --secondary: rgba(46, 26, 26, 1);
+  --text-100: rgba(255, 255, 255, 1);
+  --text-20: rgba(217, 217, 217, 1);
+  --accent-100: rgba(215, 38, 56, 1);
+  --accent-30: rgba(184, 20, 20, 0.3);
+  --accent-20: rgba(215, 38, 56, 1);
+  --warning: rgba(224, 200, 15, 1);
+  --success: rgba(9, 173, 15, 1);
+  --failure: rgba(210, 23, 13, 1);  
+}
+:root {
+  font-family: "Oxygen Mono", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-80);
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Oxygen Mono';
+  font-weight: 700;
+  color: var(--text-100)
+}
+
+html {font-size: 100%;} /* 16px */
+h1 {font-size: 4.210rem; /* 67.36px */}
+h2 {font-size: 3.158rem; /* 50.56px */}
+h3 {font-size: 2.369rem; /* 37.92px */}
+h4 {font-size: 1.777rem; /* 28.48px */}
+h5 {font-size: 1.333rem; /* 21.28px */}
+small {font-size: 0.750rem; /* 12px */}
+
+
+/**************** CSS RESETS ****************/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
